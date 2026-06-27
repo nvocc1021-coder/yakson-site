@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>목동 커플마사지 | 약손건강목동마사지</title>
+  <meta name="description" content="목동 커플마사지 전문 약손건강목동마사지. 커플·부부·가족·대학생 데이트 코스로 인기. 오목교역 1번출구 1분." />
+  <meta name="keywords" content="목동커플마사지,오목교커플마사지,목동부부마사지,커플마사지목동,약손건강목동마사지" />
+  <meta property="og:title" content="목동 커플마사지 | 약손건강목동마사지" />
+  <meta property="og:image" content="msg5.jpg" />
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    :root{--green:#2e7d32;--green-light:#4caf50;--green-pale:#e8f5e9;--gold:#f5a623;--dark:#1a1a1a;--gray:#555}
+    body{font-family:'Apple SD Gothic Neo','나눔고딕','Malgun Gothic',sans-serif;color:var(--dark);background:#fff;padding-bottom:70px}
+    header{position:fixed;top:0;left:0;right:0;z-index:999;background:rgba(255,255,255,0.97);backdrop-filter:blur(8px);border-bottom:2px solid var(--green);display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:64px}
+    .logo{display:flex;align-items:center;gap:10px;text-decoration:none}
+    .logo img{height:40px;width:auto}
+    .logo-text{display:flex;flex-direction:column;gap:3px}
+    .logo-name{font-size:1rem;font-weight:800;color:var(--green);line-height:1}
+    .logo-name span{color:var(--gold)}
+    .logo-sub{font-size:0.75rem;color:#888}
+    .header-btn{background:var(--green);color:#fff;border:none;border-radius:24px;padding:8px 18px;font-size:0.85rem;font-weight:700;cursor:pointer;text-decoration:none}
+    .page-hero{margin-top:64px;background:linear-gradient(135deg,#1b5e20,#2e7d32);padding:40px 24px;text-align:center;color:#fff}
+    .page-hero .breadcrumb{font-size:0.8rem;color:rgba(255,255,255,0.6);margin-bottom:12px}
+    .page-hero .breadcrumb a{color:rgba(255,255,255,0.7);text-decoration:none}
+    .page-hero h1{font-size:1.8rem;font-weight:800;margin-bottom:8px}
+    .page-hero p{font-size:0.95rem;color:rgba(255,255,255,0.85)}
+    .section{max-width:860px;margin:0 auto;padding:48px 24px}
+    .section-img{width:100%;max-height:400px;object-fit:cover;border-radius:16px;margin-bottom:36px;box-shadow:0 8px 24px rgba(0,0,0,0.12)}
+    .intro-box{background:var(--green-pale);border-left:4px solid var(--green);border-radius:0 12px 12px 0;padding:20px 24px;margin-bottom:32px;font-size:1rem;line-height:1.8;color:var(--dark)}
+    .content-block{margin-bottom:32px}
+    .content-block h2{font-size:1.2rem;font-weight:800;color:var(--green);margin-bottom:14px;padding-bottom:8px;border-bottom:2px solid var(--green-pale)}
+    .content-block p{font-size:0.95rem;line-height:1.9;color:#444;margin-bottom:10px}
+    .who-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:16px}
+    @media(max-width:480px){.who-grid{grid-template-columns:1fr}}
+    .who-card{background:var(--green-pale);border-radius:12px;padding:18px 16px;display:flex;align-items:center;gap:12px}
+    .who-icon{font-size:1.8rem;flex-shrink:0}
+    .who-text strong{font-size:0.92rem;color:var(--green);display:block;margin-bottom:3px}
+    .who-text span{font-size:0.82rem;color:#666}
+    .highlight-box{background:#fff8e1;border-left:4px solid var(--gold);border-radius:0 12px 12px 0;padding:16px 20px;margin:16px 0;font-size:0.95rem;line-height:1.8;color:#555;font-weight:600}
+    .price-section{background:#f9f9f9;padding:48px 24px}
+    .price-inner{max-width:1100px;margin:0 auto}
+    .price-title{text-align:center;margin-bottom:16px}
+    .price-title .tag{display:inline-block;background:var(--green-pale);color:var(--green);font-size:0.88rem;font-weight:700;padding:4px 14px;border-radius:20px;margin-bottom:10px}
+    .price-title h2{font-size:1.5rem;font-weight:800}
+    .price-title h2 span{color:var(--green)}
+    .price-note{text-align:center;font-size:0.85rem;color:#e65100;font-weight:600;margin-bottom:28px}
+    .menu-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    @media(max-width:900px){.menu-grid{grid-template-columns:repeat(2,1fr)}}
+    @media(max-width:600px){.menu-grid{grid-template-columns:1fr}}
+    .menu-card{border:1.5px solid #e0e0e0;border-radius:14px;padding:16px 18px;display:flex;flex-direction:column;gap:6px;transition:all .2s;position:relative;overflow:hidden;background:#fff}
+    .menu-card::before{content:'';position:absolute;left:0;top:0;bottom:0;width:4px;background:var(--green);border-radius:4px 0 0 4px}
+    .menu-card:hover{border-color:var(--green);background:var(--green-pale)}
+    .menu-card.popular{border-color:var(--gold)}
+    .menu-card.popular::before{background:var(--gold)}
+    .menu-card.popular:hover{background:#fffde7;border-color:var(--gold)}
+    .menu-header{display:flex;align-items:center;gap:6px;flex-wrap:nowrap}
+    .badge-popular{flex-shrink:0;background:#e53935;color:#fff;font-size:0.72rem;font-weight:700;padding:3px 10px;border-radius:12px}
+    .menu-name{font-size:0.95rem;font-weight:700;color:var(--dark);flex:1;min-width:0}
+    .menu-duration{flex-shrink:0;font-size:0.88rem;font-weight:800;color:#fff;background:var(--green);padding:3px 10px;border-radius:10px;white-space:nowrap}
+    .menu-bottom{display:flex;align-items:stretch;justify-content:space-between;gap:24px;padding-top:12px;border-top:1px solid #eee;margin-top:8px}
+    .menu-left{display:flex;flex-direction:column;justify-content:space-between;gap:12px;flex:1;min-width:0}
+    .menu-time{font-size:0.82rem;color:var(--gray);line-height:1.5}
+    .menu-book-row{display:flex;gap:6px;align-items:center}
+    .menu-book{display:inline-block;align-self:flex-start;padding:5px 12px;border-radius:14px;font-size:0.75rem;font-weight:700;text-decoration:none;white-space:nowrap;transition:opacity .2s}
+    .menu-book:hover{opacity:0.8}
+    .menu-book.naver{background:#03c75a;color:#fff}
+    .menu-book.review{background:#fff;border:1.5px solid #03c75a;color:#03c75a}
+    .menu-book.call{background:#eee;color:#555}
+    .naver-n{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;background:#fff;border-radius:2px;font-size:10px;font-weight:900;font-style:italic;color:#03c75a;line-height:1}
+    .menu-price{display:flex;flex-direction:column;gap:7px;flex-shrink:0;align-self:flex-start}
+    .price-row{display:flex;align-items:center;justify-content:space-between;gap:8px}
+    .price-type{font-size:0.72rem;font-weight:700;color:#fff;background:var(--green);padding:2px 7px;border-radius:8px;min-width:38px;text-align:center}
+    .price-type.general{background:#9e9e9e}
+    .price-val{font-size:1rem;font-weight:800;color:var(--green)}
+    .price-val.general{color:var(--gray);font-size:0.9rem;font-weight:600}
+    .menu-card.popular .price-val{color:#e65100}
+    .cta-section{background:var(--green);padding:48px 24px;text-align:center;color:#fff}
+    .cta-section h2{font-size:1.4rem;font-weight:800;margin-bottom:8px}
+    .cta-section p{font-size:0.9rem;opacity:0.85;margin-bottom:24px}
+    .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .cta-btn{display:inline-block;padding:12px 28px;border-radius:28px;font-size:0.95rem;font-weight:700;text-decoration:none}
+    .cta-btn.naver{background:#fff;color:var(--green)}
+    .cta-btn.call{background:rgba(255,255,255,0.15);color:#fff;border:2px solid rgba(255,255,255,0.5)}
+    footer{background:#111;color:#aaa;padding:32px 24px;text-align:center;font-size:0.82rem}
+    .footer-brand{font-size:1rem;font-weight:800;color:#fff;margin-bottom:6px}
+    .footer-info{line-height:2;margin-bottom:12px}
+    .footer-links{display:flex;gap:16px;justify-content:center}
+    footer a{color:#4caf50;text-decoration:none}
+    .mobile-bottom-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;height:60px}
+    .mobile-bottom-bar a{flex:1;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:0.9rem;font-weight:700;gap:6px}
+    .mb-naver{background:#03c75a}
+    .mb-call{background:#2e7d32}
+    @media(min-width:769px){.mobile-bottom-bar{justify-content:center;background:#1a1a1a}.mobile-bottom-bar a{max-width:280px}}
+  </style>
+</head>
+<body>
+
+<header>
+  <a href="index.html" class="logo">
+    <img src="logo.png" alt="약손건강목동마사지 로고" />
+    <div class="logo-text">
+      <span class="logo-name">약손건강<span>목동</span>마사지</span>
+      <span class="logo-sub">온가족이 함께 받는 마사지</span>
+    </div>
+  </a>
+  <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank" class="header-btn">📅 네이버 예약</a>
+</header>
+
+<div class="page-hero">
+  <div class="breadcrumb"><a href="index.html">홈</a> &gt; 커플마사지</div>
+  <h1>목동 커플마사지</h1>
+  <p>소중한 사람과 함께하는 특별한 힐링 시간</p>
+</div>
+
+<div class="section">
+  <img src="msg5.jpg" alt="약손건강목동마사지 커플마사지" class="section-img" />
+
+  <div class="intro-box">
+    안녕하세요^^ 목동 1등 마사지샵 약손입니다.<br /><br />
+    요즘 저희 샵에 커플·부부 등 함께 오시는 분들이 많으십니다. 혼자 받다가 만족하셔서 함께 오시는 경우도 많으시고, 기념일에 소중한 추억을 만들기 위해 네이버 방문자 리뷰를 보고 찾아 오시기도 합니다.<br /><br />
+    특히 대학생 커플들도 가격이 저렴해 데이트 장소로 많이 이용하십니다.<br />
+    <strong>사랑하는 사람과의 특별한 시간! 최고의 선물이 될 수 있도록 하겠습니다.</strong>
+  </div>
+
+  <div class="content-block">
+    <h2>이런 분들께 추천해요</h2>
+    <div class="who-grid">
+      <div class="who-card">
+        <div class="who-icon">💑</div>
+        <div class="who-text">
+          <strong>커플 · 부부</strong>
+          <span>기념일·특별한 날 선물로</span>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">👨‍👩‍👧‍👦</div>
+        <div class="who-text">
+          <strong>가족</strong>
+          <span>부모님과 함께 받는 효도 선물</span>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">🎓</div>
+        <div class="who-text">
+          <strong>대학생 커플</strong>
+          <span>합리적인 가격의 데이트 코스</span>
+        </div>
+      </div>
+      <div class="who-card">
+        <div class="who-icon">👫</div>
+        <div class="who-text">
+          <strong>친구 · 지인</strong>
+          <span>함께 힐링하는 특별한 시간</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>예약 안내</h2>
+    <div class="highlight-box">
+      커플마사지는 각각 원하시는 메뉴로 예약하시면 됩니다.<br />
+      같은 시간대 예약 시 함께 이용 가능하며, 예약 시 "커플 방문" 메모를 남겨주세요.
+    </div>
+  </div>
+</div>
+
+<div class="price-section">
+  <div class="price-inner">
+    <div class="price-title">
+      <div class="tag">커플마사지 가격</div>
+      <h2>프로그램 <span>안내</span></h2>
+    </div>
+    <p class="price-note">※ 1인 기준 가격 · 두 분이 각각 예약하시면 됩니다</p>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-header"><div class="menu-name">통증관리</div><span class="menu-duration">60분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">머리, 목, 어깨, 등, 허리 집중</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/4197276" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/4197276?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">60,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">66,000원</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card popular">
+        <div class="menu-header"><span class="badge-popular">★ 인기</span><div class="menu-name">통증관리 (다리+전신추가)</div><span class="menu-duration">90분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">전신 통증 집중 케어</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506031" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506031?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">80,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">88,000원</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card popular">
+        <div class="menu-header"><span class="badge-popular">★ 인기</span><div class="menu-name">특) 전신관리 + 발관리</div><span class="menu-duration">90분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">전신 + 발 집중케어</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/4115716" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/4115716?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">70,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">77,000원</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-header"><div class="menu-name">아로마 전신</div><span class="menu-duration">90분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">전신 아로마 오일 케어</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3546924" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3546924?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">90,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">99,000원</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-header"><div class="menu-name">스페셜 아로마전신</div><span class="menu-duration">120분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">전신 스페셜 아로마 집중케어</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506038" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506038?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">120,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">132,000원</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card">
+        <div class="menu-header"><div class="menu-name">VIP 스포츠</div><span class="menu-duration">120분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">전신관리+복부관리+발관리or얼굴</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506042" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506042?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">100,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">110,000원</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="cta-section">
+  <h2>소중한 분과 함께 예약하세요</h2>
+  <p>오목교역 1번출구 1분 · 매일 10:00 ~ 23:50</p>
+  <div class="cta-btns">
+    <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank" class="cta-btn naver">📅 네이버 예약</a>
+    <a href="tel:010-9773-9507" class="cta-btn call">📞 전화 예약</a>
+  </div>
+</div>
+
+<footer>
+  <div class="footer-brand">상호 : 약손건강목동마사지</div>
+  <div class="footer-info">
+    서울 양천구 오목로 335, 3층 (목동 406-22)<br />
+    오목교역 1번출구 왼쪽으로 40m · 편비어킹 호프 건물 3층<br />
+    전화: <a href="tel:010-9773-9507">010-9773-9507</a> · 영업: 매일 10:00~23:50
+  </div>
+  <div class="footer-links">
+    <a href="https://blog.naver.com/qinhuan5527" target="_blank">네이버 블로그</a>
+    <a href="https://m.place.naver.com/place/1637761160/review/visitor?entry=pll" target="_blank">네이버 리뷰</a>
+    <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank">네이버 예약</a>
+  </div>
+</footer>
+
+<div class="mobile-bottom-bar">
+  <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank" class="mb-naver">📅 네이버 예약</a>
+  <a href="tel:010-9773-9507" class="mb-call">📞 전화 예약</a>
+</div>
+
+</body>
+</html>

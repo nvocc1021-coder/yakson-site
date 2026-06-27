@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://xn--em4bv5e.com/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/mokdong.png</image:loc>
+      <image:title>목동마사지 약손건강목동마사지</image:title>
+      <image:caption>목동·오목교역 지역 대표 마사지 전문점 약손건강목동마사지</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/img.png</image:loc>
+      <image:title>약손건강목동마사지 메인</image:title>
+      <image:caption>목동마사지·오목교마사지·통증마사지·스포츠마사지·아로마마사지</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://xn--em4bv5e.com/sports.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/msg1.png</image:loc>
+      <image:title>목동 스포츠마사지 약손건강목동마사지</image:title>
+      <image:caption>목동 스포츠마사지·통증마사지·근육통 케어 전문</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://xn--em4bv5e.com/aroma.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/msg2.png</image:loc>
+      <image:title>목동 아로마마사지 약손건강목동마사지</image:title>
+      <image:caption>목동 아로마마사지·호호바오일·피부보습·부종 케어</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://xn--em4bv5e.com/student.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/msg3.png</image:loc>
+      <image:title>목동 수험생마사지 약손건강목동마사지</image:title>
+      <image:caption>목동 수험생마사지·집중력향상·어깨뭉침·거북목 케어</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://xn--em4bv5e.com/foot.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/msg4.png</image:loc>
+      <image:title>목동 발마사지 약손건강목동마사지</image:title>
+      <image:caption>목동 발마사지·발반사구·피로회복·혈액순환 촉진</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://xn--em4bv5e.com/couple.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/msg5.png</image:loc>
+      <image:title>목동 커플마사지 약손건강목동마사지</image:title>
+      <image:caption>목동 커플마사지·부부마사지·대학생 데이트 코스</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://xn--em4bv5e.com/dance.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <image:image>
+      <image:loc>https://xn--em4bv5e.com/msg6.png</image:loc>
+      <image:title>목동 무용전공 마사지 약손건강목동마사지</image:title>
+      <image:caption>목동 무용전공 마사지·종아리근육통·하체피로 집중케어</image:caption>
+    </image:image>
+  </url>
+
+</urlset>
