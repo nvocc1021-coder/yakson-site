@@ -96,6 +96,15 @@
     .footer-info{line-height:2;margin-bottom:12px}
     .footer-links{display:flex;gap:16px;justify-content:center}
     footer a{color:#4caf50;text-decoration:none}
+    .section-label{display:inline-block;background:var(--green);color:#fff;font-size:0.8rem;font-weight:800;padding:3px 12px;border-radius:12px;margin-bottom:12px}
+    .course-nav{background:#f0f7f0;border-bottom:1px solid #d0e8d0;padding:14px 20px}
+    .course-nav-inner{max-width:1100px;margin:0 auto}
+    .course-nav-title{font-size:0.75rem;font-weight:700;color:#888;margin-bottom:10px;letter-spacing:0.5px}
+    .course-nav-grid{display:flex;gap:8px;flex-wrap:wrap}
+    .course-nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 12px;border-radius:12px;text-decoration:none;font-size:0.75rem;font-weight:700;color:#555;background:#fff;border:1.5px solid #e0e0e0;transition:all .2s;min-width:64px}
+    .course-nav-item:hover{border-color:var(--green);color:var(--green);background:var(--green-pale)}
+    .course-nav-item.active{border-color:var(--green);color:var(--green);background:var(--green-pale)}
+    .course-nav-icon{font-size:1.3rem}
     .mobile-bottom-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;height:60px}
     .mobile-bottom-bar a{flex:1;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:0.9rem;font-weight:700;gap:6px}
     .mb-naver{background:#03c75a}
@@ -117,15 +126,37 @@
   <button class="hamburger" onclick="toggleMenu()" id="hamburger"><span></span><span></span><span></span></button>
 </header>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html?v=2" onclick="closeMenu()">🏠 홈으로</a>
-  <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank" onclick="closeMenu()">📅 네이버 예약</a>
-  <a href="https://booking.naver.com/booking/13/bizes/379913?tab=review" target="_blank" onclick="closeMenu()">⭐ 리뷰 보기</a>
+  <a href="index.html#about" onclick="closeMenu()">소개</a>
+  <a href="index.html#menu" onclick="closeMenu()">메뉴&amp;가격</a>
+  <a href="index.html#review" onclick="closeMenu()">리뷰</a>
+  <a href="index.html#info" onclick="closeMenu()">오시는길</a>
+  <div style="padding:10px 24px 4px;font-size:0.75rem;font-weight:700;color:#aaa;">마사지 종류</div>
+  <a href="sports.html?v=2" onclick="closeMenu()">💪 스포츠마사지</a>
+  <a href="aroma.html?v=2" onclick="closeMenu()">🌿 아로마마사지</a>
+  <a href="student.html?v=2" onclick="closeMenu()">📚 수험생마사지</a>
+  <a href="foot.html?v=2" onclick="closeMenu()">🦶 발마사지</a>
+  <a href="couple.html?v=2" onclick="closeMenu()" style="color:var(--green)">💑 커플마사지</a>
+  <a href="dance.html?v=2" onclick="closeMenu()">🩰 무용전공</a>
 </div>
 
 <div class="page-hero">
-  <div class="breadcrumb"><a href="#" onclick="history.back();return false;" class="back-btn">← 이전으로</a></div>
+  <div class="breadcrumb"><a href="index.html" class="back-btn">← 홈으로</a></div>
   <h1>목동 커플마사지</h1>
   <p>소중한 사람과 함께하는 특별한 힐링 시간</p>
+</div>
+
+<div class="course-nav">
+  <div class="course-nav-inner">
+    <div class="course-nav-title">마사지 종류</div>
+    <div class="course-nav-grid">
+      <a href="sports.html?v=2" class="course-nav-item"><span class="course-nav-icon">💪</span>스포츠</a>
+      <a href="aroma.html?v=2" class="course-nav-item"><span class="course-nav-icon">🌿</span>아로마</a>
+      <a href="student.html?v=2" class="course-nav-item"><span class="course-nav-icon">📚</span>수험생</a>
+      <a href="foot.html?v=2" class="course-nav-item"><span class="course-nav-icon">🦶</span>발마사지</a>
+      <a href="couple.html?v=2" class="course-nav-item active"><span class="course-nav-icon">💑</span>커플</a>
+      <a href="dance.html?v=2" class="course-nav-item"><span class="course-nav-icon">🩰</span>무용전공</a>
+    </div>
+  </div>
 </div>
 
 <div class="section">
@@ -187,7 +218,8 @@
       <div class="tag">커플마사지 가격</div>
       <h2>프로그램 <span>안내</span></h2>
     </div>
-    <p class="price-note">※ 1인 기준 가격 · 두 분이 각각 예약하시면 됩니다</p>
+    <p class="price-note">※ 1인 기준 가격 · 동시에 최대 4명까지 이용 가능합니다</p>
+    <div class="section-label">💪 스포츠마사지</div>
     <div class="menu-grid">
       <div class="menu-card">
         <div class="menu-header"><div class="menu-name">통증관리</div><span class="menu-duration">60분</span></div>
@@ -221,6 +253,7 @@
           </div>
         </div>
       </div>
+
       <div class="menu-card popular">
         <div class="menu-header"><span class="badge-popular">★ 인기</span><div class="menu-name">특) 전신관리 + 발관리</div><span class="menu-duration">90분</span></div>
         <div class="menu-bottom">
@@ -229,6 +262,42 @@
             <div class="menu-book-row">
               <a href="https://booking.naver.com/booking/13/bizes/379913/items/4115716" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
               <a href="https://booking.naver.com/booking/13/bizes/379913/items/4115716?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">70,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">77,000원</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-card popular">
+        <div class="menu-header"><span class="badge-popular">★ 인기</span><div class="menu-name">VIP 스포츠</div><span class="menu-duration">120분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">전신관리+복부관리+발관리or얼굴</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506042" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506042?tab=review" target="_blank" class="menu-book review">리뷰</a>
+            </div>
+          </div>
+          <div class="menu-price">
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">100,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">110,000원</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section-label" style="margin-top:28px">🌿 아로마마사지</div>
+    <div class="menu-grid">
+      <div class="menu-card">
+        <div class="menu-header"><div class="menu-name">아로마 후면</div><span class="menu-duration">60분</span></div>
+        <div class="menu-bottom">
+          <div class="menu-left">
+            <div class="menu-time">아로마후면or등집중관리or하체관리</div>
+            <div class="menu-book-row">
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3546927" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3546927?tab=review" target="_blank" class="menu-book review">리뷰</a>
             </div>
           </div>
           <div class="menu-price">
@@ -269,19 +338,19 @@
           </div>
         </div>
       </div>
-      <div class="menu-card">
-        <div class="menu-header"><div class="menu-name">VIP 스포츠</div><span class="menu-duration">120분</span></div>
+      <div class="menu-card popular">
+        <div class="menu-header"><span class="badge-popular">★ 인기</span><div class="menu-name">VIP 피로회복</div><span class="menu-duration">150분</span></div>
         <div class="menu-bottom">
           <div class="menu-left">
-            <div class="menu-time">전신관리+복부관리+발관리or얼굴</div>
+            <div class="menu-time">두피+스포츠+아로마+복부+발관리or얼굴</div>
             <div class="menu-book-row">
-              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506042" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
-              <a href="https://booking.naver.com/booking/13/bizes/379913/items/3506042?tab=review" target="_blank" class="menu-book review">리뷰</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/4094194" target="_blank" class="menu-book naver"><span class="naver-n">N</span> 예약하기</a>
+              <a href="https://booking.naver.com/booking/13/bizes/379913/items/4094194?tab=review" target="_blank" class="menu-book review">리뷰</a>
             </div>
           </div>
           <div class="menu-price">
-            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">100,000원</span></div>
-            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">110,000원</span></div>
+            <div class="price-row"><span class="price-type">회원가</span><span class="price-val">150,000원</span></div>
+            <div class="price-row"><span class="price-type general">일반가</span><span class="price-val general">165,000원</span></div>
           </div>
         </div>
       </div>
@@ -317,5 +386,20 @@
   <a href="tel:010-9773-9507" class="mb-call">📞 전화 예약</a>
 </div>
 
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileNav').classList.remove('open');
+  }
+  document.addEventListener('click', function(e) {
+    const nav = document.getElementById('mobileNav');
+    const btn = document.getElementById('hamburger');
+    if (!nav.contains(e.target) && !btn.contains(e.target)) {
+      nav.classList.remove('open');
+    }
+  });
+</script>
 </body>
 </html>

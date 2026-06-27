@@ -109,6 +109,14 @@
     .footer-info{line-height:2;margin-bottom:12px}
     .footer-links{display:flex;gap:16px;justify-content:center}
     footer a{color:#4caf50;text-decoration:none}
+    .course-nav{background:#f0f7f0;border-bottom:1px solid #d0e8d0;padding:14px 20px}
+    .course-nav-inner{max-width:1100px;margin:0 auto}
+    .course-nav-title{font-size:0.75rem;font-weight:700;color:#888;margin-bottom:10px;text-transform:uppercase;letter-spacing:0.5px}
+    .course-nav-grid{display:flex;gap:8px;flex-wrap:wrap}
+    .course-nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 12px;border-radius:12px;text-decoration:none;font-size:0.75rem;font-weight:700;color:#555;background:#fff;border:1.5px solid #e0e0e0;transition:all .2s;min-width:64px}
+    .course-nav-item:hover{border-color:var(--green);color:var(--green);background:var(--green-pale)}
+    .course-nav-item.active{border-color:var(--green);color:var(--green);background:var(--green-pale)}
+    .course-nav-icon{font-size:1.3rem}
 
     /* MOBILE BOTTOM BAR */
     .mobile-bottom-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;height:60px}
@@ -132,15 +140,37 @@
   <button class="hamburger" onclick="toggleMenu()" id="hamburger"><span></span><span></span><span></span></button>
 </header>
 <div class="mobile-nav" id="mobileNav">
-  <a href="index.html?v=2" onclick="closeMenu()">🏠 홈으로</a>
-  <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank" onclick="closeMenu()">📅 네이버 예약</a>
-  <a href="https://booking.naver.com/booking/13/bizes/379913?tab=review" target="_blank" onclick="closeMenu()">⭐ 리뷰 보기</a>
+  <a href="index.html#about" onclick="closeMenu()">소개</a>
+  <a href="index.html#menu" onclick="closeMenu()">메뉴&amp;가격</a>
+  <a href="index.html#review" onclick="closeMenu()">리뷰</a>
+  <a href="index.html#info" onclick="closeMenu()">오시는길</a>
+  <div style="padding:10px 24px 4px;font-size:0.75rem;font-weight:700;color:#aaa;">마사지 종류</div>
+  <a href="sports.html?v=2" onclick="closeMenu()" style="color:var(--green)">💪 스포츠마사지</a>
+  <a href="aroma.html?v=2" onclick="closeMenu()">🌿 아로마마사지</a>
+  <a href="student.html?v=2" onclick="closeMenu()">📚 수험생마사지</a>
+  <a href="foot.html?v=2" onclick="closeMenu()">🦶 발마사지</a>
+  <a href="couple.html?v=2" onclick="closeMenu()">💑 커플마사지</a>
+  <a href="dance.html?v=2" onclick="closeMenu()">🩰 무용전공</a>
 </div>
 
 <div class="page-hero">
-  <div class="breadcrumb"><a href="#" onclick="history.back();return false;" class="back-btn">← 이전으로</a></div>
+  <div class="breadcrumb"><a href="index.html" class="back-btn">← 홈으로</a></div>
   <h1>목동 스포츠마사지</h1>
   <p>근육·통증·피로를 오랜 경력의 관리사가 맞춤 케어</p>
+</div>
+
+<div class="course-nav">
+  <div class="course-nav-inner">
+    <div class="course-nav-title">마사지 종류</div>
+    <div class="course-nav-grid">
+      <a href="sports.html?v=2" class="course-nav-item active"><span class="course-nav-icon">💪</span>스포츠</a>
+      <a href="aroma.html?v=2" class="course-nav-item"><span class="course-nav-icon">🌿</span>아로마</a>
+      <a href="student.html?v=2" class="course-nav-item"><span class="course-nav-icon">📚</span>수험생</a>
+      <a href="foot.html?v=2" class="course-nav-item"><span class="course-nav-icon">🦶</span>발마사지</a>
+      <a href="couple.html?v=2" class="course-nav-item"><span class="course-nav-icon">💑</span>커플</a>
+      <a href="dance.html?v=2" class="course-nav-item"><span class="course-nav-icon">🩰</span>무용전공</a>
+    </div>
+  </div>
 </div>
 
 <div class="section">
@@ -285,5 +315,20 @@
   <a href="tel:010-9773-9507" class="mb-call">📞 전화 예약</a>
 </div>
 
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+  function closeMenu() {
+    document.getElementById('mobileNav').classList.remove('open');
+  }
+  document.addEventListener('click', function(e) {
+    const nav = document.getElementById('mobileNav');
+    const btn = document.getElementById('hamburger');
+    if (!nav.contains(e.target) && !btn.contains(e.target)) {
+      nav.classList.remove('open');
+    }
+  });
+</script>
 </body>
 </html>
