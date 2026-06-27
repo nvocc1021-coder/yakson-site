@@ -98,11 +98,11 @@
     .course-nav{background:#f0f7f0;border-bottom:1px solid #d0e8d0;padding:14px 20px}
     .course-nav-inner{max-width:1100px;margin:0 auto}
     .course-nav-title{font-size:0.75rem;font-weight:700;color:#888;margin-bottom:10px;letter-spacing:0.5px}
-    .course-nav-grid{display:flex;gap:8px;flex-wrap:wrap}
-    .course-nav-item{display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 12px;border-radius:12px;text-decoration:none;font-size:0.75rem;font-weight:700;color:#555;background:#fff;border:1.5px solid #e0e0e0;transition:all .2s;min-width:64px}
+    .course-nav-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}@media(max-width:768px){.course-nav-grid{grid-template-columns:repeat(3,1fr)}}
+    .course-nav-item{display:flex;flex-direction:row;align-items:center;justify-content:center;gap:5px;padding:8px 6px;border-radius:12px;text-decoration:none;font-size:0.78rem;font-weight:700;color:#555;background:#fff;border:1.5px solid #e0e0e0;transition:all .2s;white-space:nowrap}
     .course-nav-item:hover{border-color:var(--green);color:var(--green);background:var(--green-pale)}
     .course-nav-item.active{border-color:var(--green);color:var(--green);background:var(--green-pale)}
-    .course-nav-icon{font-size:1.3rem}
+    .course-nav-icon{font-size:1.1rem;flex-shrink:0}
     .mobile-bottom-bar{display:flex;position:fixed;bottom:0;left:0;right:0;z-index:1000;height:60px}
     .mobile-bottom-bar a{flex:1;display:flex;align-items:center;justify-content:center;color:#fff;text-decoration:none;font-size:0.9rem;font-weight:700;gap:6px}
     .mb-naver{background:#03c75a}
