@@ -403,6 +403,7 @@
 <div class="mobile-bottom-bar">
   <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank" class="mb-naver">📅 네이버 예약</a>
   <a href="tel:010-9773-9507" class="mb-call">📞 전화 예약</a>
+<button onclick="openCoupon()" id="couponBarBtn" style="flex:1;display:none;align-items:center;justify-content:center;flex-direction:column;gap:2px;background:rgba(30,100,30,0.7);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:none;border-left:1px solid rgba(255,255,255,0.15);color:#fff;font-weight:800;cursor:pointer;height:100%;padding:0 8px;"><span style="font-size:0.62rem;opacity:0.85;">홈페이지 오픈이벤트</span><span style="font-size:0.9rem;display:inline-block;animation:couponFloat 2.2s ease-in-out infinite;">🎁 10% 쿠폰</span></button>
 </div>
 
 <script>
@@ -425,5 +426,54 @@
 <div class="daum-wm-datetime daum-hidden">2026.7.17 00:00:00</div>
 <div class="daum-wm-title daum-hidden">커플마사지 | 목동마사지</div>
 <div class="daum-wm-content daum-hidden">목동 커플마사지 전문. 동시에 최대 4명, 스포츠·아로마 커플 프로그램. 오목교역 1번출구 1분, 약손건강목동마사지.</div>
+
+<!-- 쿠폰 팝업 -->
+<div id="couponOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:20px;max-width:340px;width:90%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);position:relative;">
+    <div style="background:linear-gradient(135deg,#2d7a2d,#4caf50);padding:28px 24px 20px;text-align:center;">
+      <div style="font-size:0.8rem;color:rgba(255,255,255,0.85);letter-spacing:1px;margin-bottom:6px;">🎉 홈페이지 런칭 기념</div>
+      <div style="font-size:1.5rem;font-weight:900;color:#fff;line-height:1.2;">약손건강목동마사지</div>
+      <div style="font-size:0.85rem;color:rgba(255,255,255,0.9);margin-top:6px;">오목교역 1번출구 1분</div>
+    </div>
+    <div style="padding:24px;text-align:center;">
+      <div style="font-size:0.75rem;color:#888;margin-bottom:8px;">이용 기간</div>
+      <div style="font-size:1rem;font-weight:700;color:#333;margin-bottom:20px;">2026년 8월 1일 ~ 8월 31일</div>
+      <div style="background:#f0f7f0;border:2px dashed #4caf50;border-radius:14px;padding:18px 16px;margin-bottom:20px;">
+        <div style="font-size:0.8rem;color:#4caf50;font-weight:700;margin-bottom:4px;">전 메뉴</div>
+        <div style="font-size:3rem;font-weight:900;color:#2d7a2d;line-height:1;">10%</div>
+        <div style="font-size:1.1rem;font-weight:800;color:#2d7a2d;">할인 쿠폰</div>
+      </div>
+      <div style="font-size:0.8rem;color:#888;line-height:1.6;margin-bottom:20px;">
+        📱 계산 시 이 화면을 보여주세요<br>
+        ※ 기간 내 1회 이용 가능<br>
+        📅 네이버예약 · 전화예약 모두 가능
+      </div>
+      <div style="display:flex;gap:8px;margin-bottom:10px;">
+        <button onclick="closeCoupon(false)" style="flex:1;padding:14px;background:linear-gradient(135deg,#2d7a2d,#4caf50);color:#fff;border:none;border-radius:12px;font-size:1rem;font-weight:800;cursor:pointer;">확인했어요!</button>
+        <button onclick="closeCoupon(false)" style="padding:14px 16px;background:#f0f0f0;color:#555;border:none;border-radius:12px;font-size:0.9rem;font-weight:700;cursor:pointer;">닫기</button>
+      </div>
+      <button onclick="closeCoupon(true)" style="width:100%;padding:10px;background:none;color:#aaa;border:none;font-size:0.8rem;cursor:pointer;">오늘 하루 보지 않기</button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+(function(){
+  var now = new Date();
+  if(now.getMonth()+1 !== 8) return;
+  var barBtn=document.getElementById('couponBarBtn');if(barBtn)barBtn.style.display='flex';  var hidden = localStorage.getItem('coupon_hidden_date');
+  if(hidden === now.toDateString()) return;
+  document.getElementById('couponOverlay').style.display = 'flex';
+})();
+function closeCoupon(hideToday){
+  if(hideToday) localStorage.setItem('coupon_hidden_date', new Date().toDateString());
+  document.getElementById('couponOverlay').style.display = 'none';
+}
+function openCoupon(){
+  localStorage.removeItem('coupon_hidden_date');
+  document.getElementById('couponOverlay').style.display = 'flex';
+}
+</script>
 </body>
 </html>
