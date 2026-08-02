@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="ko">
 <head>
   <meta charset="UTF-8" />
@@ -1091,6 +1091,9 @@
     <a href="#info">오시는길</a>
   </nav>
   <a href="https://booking.naver.com/booking/13/bizes/379913" target="_blank" class="header-btn">📅 네이버 예약</a>
+  <button onclick="copyLink()" title="링크 복사" style="background:none;border:none;cursor:pointer;padding:6px;display:flex;align-items:center;justify-content:center;color:var(--green);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
+  </button>
   <button class="hamburger" onclick="toggleMenu()" id="hamburger">
     <span></span>
     <span></span>
@@ -1132,6 +1135,27 @@
       <p><strong style="color:#a5d6a7">오목교역 1번 출구 도보 1분</strong><br />
       목동·오목교역 지역 대표 마사지 전문점<br />
       스포츠마사지 · 아로마마사지 · 수험생마사지 · 산전산후마사지</p>
+      <div style="margin-top:18px;background:rgba(0,0,0,0.28);border:2px solid rgba(255,255,255,0.35);border-radius:16px;padding:18px 20px;text-align:left;backdrop-filter:blur(6px);">
+        <!-- 건전샵 강조 배지 -->
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.2);">
+          <span style="font-size:1.3rem;">🛡️</span>
+          <span style="font-size:1rem;font-weight:900;color:#fff;letter-spacing:-0.3px;">가족과 함께 안심하고 받을 수 있는 <span style="color:#a5d6a7;">건전 마사지샵</span></span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:10px;">
+          <div style="display:flex;align-items:flex-start;gap:10px;color:#fff;font-size:0.92rem;font-weight:600;">
+            <span style="color:#a5d6a7;font-size:1.1rem;flex-shrink:0;margin-top:1px;">✔</span>
+            <span>원하는 부위 <strong style="color:#a5d6a7;">집중케어</strong> — 받고 싶은 곳을 마음껏</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;color:#fff;font-size:0.92rem;font-weight:600;">
+            <span style="color:#a5d6a7;font-size:1.1rem;flex-shrink:0;margin-top:1px;">✔</span>
+            <span>부위별 <strong style="color:#a5d6a7;">세심한 압 조절</strong> — 내 몸에 맞는 맞춤 관리</span>
+          </div>
+          <div style="display:flex;align-items:flex-start;gap:10px;color:#fff;font-size:0.92rem;font-weight:600;">
+            <span style="color:#a5d6a7;font-size:1.1rem;flex-shrink:0;margin-top:1px;">✔</span>
+            <span><strong style="color:#a5d6a7;">청결하고 친절한</strong> 전원 여성 관리사</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -1159,6 +1183,233 @@
 </div>
 
 <!-- 마사지 종류 링크 -->
+<!-- REVIEW -->
+<section class="review" id="review">
+  <div class="section-inner">
+    <div class="section-title">
+      <div class="tag">네이버 방문자 리뷰</div>
+      <h2>고객님들의 <span>솔직한 후기</span></h2>
+    </div>
+    <p class="section-desc">직접 방문하신 고객님들의 생생한 후기를 확인하세요</p>
+
+    <div class="review-banner">
+      <a href="https://m.place.naver.com/place/1637761160/review/visitor?entry=pll" target="_blank">
+        <img src="banner.png" alt="네이버 평점 4.96" style="cursor:pointer;" />
+      </a>
+    </div>
+
+    <div class="review-cards">
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">더</div>
+          <div>
+            <div class="review-name">더키43</div>
+            <div class="review-sub">리뷰 172 · 사진 31</div>
+          </div>
+        </div>
+        <div class="review-menu">통증관리 90분 (80,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">두 번째 방문! 역시나 오늘도 시원하게 잘 받았습니다. 요즘 어깨 통증이 심하고 특히 왼쪽 어깨가 통증이 심하다 보니 더 신경 써서 해 주셔서 좋았습니다. 또 방문하고 싶은 곳이고 저는 여기 단골이 될 것 같습니다.</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">제</div>
+          <div>
+            <div class="review-name">제이야안녕</div>
+            <div class="review-sub">리뷰 53 · 사진 43</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">우연히 보고 예약한 곳인데 정말 최고예요! 가장 기본 관리 받았는데도 어디가 불편한지 물어보시고 그 부분 집중 관리 해주시더라구요!! 가격도 이정도면 합리적이구 추가 강요하고 이런거 전혀 없어요!!! 다음에 또 예약하고 올거예용ㅎㅎ</p>
+        <div class="review-tag">🔍 시술이 꼼꼼해요 +3</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">H</div>
+          <div>
+            <div class="review-name">Happy1234</div>
+            <div class="review-sub">리뷰 8</div>
+          </div>
+        </div>
+        <div class="review-menu">스페셜아로마전신 120분 (120,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">요즘 몸이 너무 찌뿌둥하고 뻐근해서 방문했어요! 굳이 말하지 않아도 관리사님들이 불편한 곳을 먼저 딱 짚어내서 꼼꼼하게 맞춤 케어를 해주시더라고요. 덕분에 정말 만족스럽게 피로 싹 풀고 갑니다. 👍</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">j</div>
+          <div>
+            <div class="review-name">jih****</div>
+            <div class="review-sub">리뷰 10 · 사진 11</div>
+          </div>
+        </div>
+        <div class="review-menu">통증관리 60분 (60,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">상체 60분 마사지 받았는데 아프진않고 괜찮은지 중간중간 확인해주셔서 좋았고 분위기 너무 편했고 목이랑 어깨통증이 심해져서 마사지샵 처음가봤는데 극락을 맛보고 왔습니다😁 너무 시원해요 주기적으로 가고싶어요 정말😭</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
+      </div>
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">g</div>
+          <div>
+            <div class="review-name">ggk****</div>
+            <div class="review-sub">리뷰 1 · 사진 1</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">컴퓨터 작업 많이 해서 여기저기 쑤시고 머리까지 아팠는데 친구 말 듣고 오길 잘했네요. 어깨 가벼워진 건 말할 것도 없고 두통이 완전히 사라져서 너무 개운해요ㅠ 특히 마지막에 해주신 두통 마사지가 너무 훌륭해서 다른 분들께도 강력 추천하고 싶습니다. 마사지 끝나고 주신 따뜻한 차 한 잔까지 완벽했어요.</p>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">박</div>
+          <div>
+            <div class="review-name">박미화1479</div>
+            <div class="review-sub">리뷰 1 · 사진 1</div>
+          </div>
+        </div>
+        <div class="review-menu">스페셜아로마전신 120분 (120,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">업무 스트레스로 온몸이 뭉쳐서 지인이 추천해줘서 방문했습니다. 마사지를 많이 받아본 편인데도 이곳은 정말 만족스럽네요. 마사지 후 두통이 확실히 가라앉았고, 평소 뻐근했던 부위들을 집중적으로 꼼꼼하게 관리해주셔서 감동했습니다. 특히 두통있으신분들한테는 꼭 권해드리고 싶네요.</p>
+        <div class="review-tag">💚 친절해요 &nbsp;😊 분위기가 편안해요 &nbsp;🔍 시술이 꼼꼼해요</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">H</div>
+          <div>
+            <div class="review-name">Happy1234</div>
+            <div class="review-sub">리뷰 8</div>
+          </div>
+        </div>
+        <div class="review-menu">스페셜아로마전신 120분 (120,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">요즘 몸이 너무 찌뿌둥하고 뻐근해서 방문했어요! 굳이 말하지 않아도 관리사님들이 불편한 곳을 먼저 딱 짚어내서 꼼꼼하게 맞춤 케어를 해주시더라고요. 덕분에 정말 만족스럽게 피로 싹 풀고 갑니다.</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">a</div>
+          <div>
+            <div class="review-name">ale****</div>
+            <div class="review-sub">리뷰 1 · 사진 2</div>
+          </div>
+        </div>
+        <div class="review-menu">VIP스포츠 120분 (100,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">승모근 통증과 두통이 심해 방문했는데, 만져보시자마자 거북목을 알아채서 놀랐어요! 도수치료보다 훨씬 효과가 빠르고 시원합니다. 뭉친 근육 제대로 풀고 가요. 감사합니다!</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">l</div>
+          <div>
+            <div class="review-name">lo3Jve</div>
+            <div class="review-sub">리뷰 3 · 사진 2</div>
+          </div>
+        </div>
+        <div class="review-menu">통증관리 60분 (60,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">최근 시험 준비때문에 목이랑 어깨가 너무 뭉쳐서 당일 예약하고 방문했는데 정말 좋았어요 😭 마사지 받고 집에 와서는 좀 아픈가 싶었는데 자고 일어나니까 싹 풀려있더라고요.</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +2</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">l</div>
+          <div>
+            <div class="review-name">leej****</div>
+            <div class="review-sub">리뷰 1 · 사진 1</div>
+          </div>
+        </div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">어머니 생신 기념으로 모시고 방문했는데, 정말 탁월한 선택이었어요! 사장님과 직원분들이 너무 친절하게 응해 주셔서 들어설 때부터 기분이 좋았습니다. 어머니께서도 너무 만족하셨고 다음에 또 오고 싶다고 하셨어요.</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">y</div>
+          <div>
+            <div class="review-name">ya2****</div>
+            <div class="review-sub">리뷰 46 · 사진 55</div>
+          </div>
+        </div>
+        <div class="review-menu">통증관리 60분 (60,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">목과 어깨에 담이 걸려서 방문했는데, 관리사분께 너무 시원하게 잘받았습니다 :) 훨씬편해지고 한의원 가는것보다 훨 낫네요ㅎㅎ 평이 좋은 이유가 있네요^^ 조만간 또 뵙겠습니다!!</p>
+        <div class="review-tag">🎯 맞춤 케어를 잘해줘요 &nbsp;😊 관리 효과가 좋아요 &nbsp;🔍 시술이 꼼꼼해요 &nbsp;💗 친절해요</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">S</div>
+          <div>
+            <div class="review-name">SHA00</div>
+            <div class="review-sub">리뷰 109 · 사진 116 · 팔로워 7</div>
+          </div>
+        </div>
+        <div class="review-menu">특)전신관리+발관리 90분 (70,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">다니던 곳 말고 새로운 곳 찾다가 한번 가봤는데 압도 적당하고 뻐근하던게 좋아졌어요! 관리사 선생님들도 나이가 많으시지 않은 것 같아요 ㅎㅎ 다음에 또 가면 다른 관리 받아보려구요 ㅎ</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 &nbsp;🎯 맞춤 케어를 잘해줘요 &nbsp;🔍 시술이 꼼꼼해요 &nbsp;💗 친절해요</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">유</div>
+          <div>
+            <div class="review-name">유선378</div>
+            <div class="review-sub">리뷰 10</div>
+          </div>
+        </div>
+        <div class="review-menu">VIP스포츠 120분 (100,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">가성비도 좋고 실력도 정말 좋아요. 하나하나 엄청 꼼꼼하게 관리해 주셔서 대충 시간만 채우는 느낌이 아니라, 진짜로 피로를 풀어주려고 노력해 주신다는 게 느껴졌어요. 시간도 120분 꽉 채워서 정성스럽게 해주시고, 중간중간 아프지 계속 체크해 주셔서 편하게 받을 수 있었습니다. 친절함까지 더해져서 전체적으로 만족도가 정말 높았어요. 연말에 다시방문하겠습니다 🤙</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 &nbsp;🔍 시술이 꼼꼼해요 &nbsp;💗 친절해요 &nbsp;📋 상담이 자세해요 &nbsp;😌 분위기가 편안해요</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">최</div>
+          <div>
+            <div class="review-name">최민정6371</div>
+            <div class="review-sub">리뷰 10 · 팔로워 1</div>
+          </div>
+        </div>
+        <div class="review-menu">통증관리 90분 (80,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">바빠서 90분만 받았는데도 효과 확실하네요ㅋㅋ 마사지 제대로 받은 곳이라 만족했습니다. 감사합니다!</p>
+        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
+      </div>
+
+      <div class="review-card">
+        <div class="review-header">
+          <div class="review-avatar">이</div>
+          <div>
+            <div class="review-name">이쏨이</div>
+            <div class="review-sub">리뷰 63 · 사진 64</div>
+          </div>
+        </div>
+        <div class="review-menu">통증관리 90분 (80,000원)</div>
+        <div class="review-stars">★★★★★</div>
+        <p class="review-text">직원모두 친절하시고 어디가 불편한지 물어보시고 정말 꼼꼼하게 잘 풀어주세요. 몸이 너무 편해집니다~</p>
+        <div class="review-tag">🎯 맞춤 케어를 잘해줘요 &nbsp;🔍 시술이 꼼꼼해요 &nbsp;💗 친절해요 &nbsp;😌 분위기가 편안해요</div>
+      </div>
+
+    </div>
+
+    <div class="review-cta">
+      <a href="https://m.place.naver.com/place/1637761160/review/visitor?entry=pll" target="_blank" class="btn-review">
+        📝 네이버 리뷰 전체 보기
+      </a>
+    </div>
+  </div>
+</section>
 <section style="background:#f9f9f9;padding:48px 24px;">
   <div style="max-width:900px;margin:0 auto;">
     <div style="text-align:center;margin-bottom:28px;">
@@ -1495,93 +1746,6 @@
   </div>
 </section>
 
-<!-- REVIEW -->
-<section class="review" id="review">
-  <div class="section-inner">
-    <div class="section-title">
-      <div class="tag">네이버 방문자 리뷰</div>
-      <h2>고객님들의 <span>솔직한 후기</span></h2>
-    </div>
-    <p class="section-desc">직접 방문하신 고객님들의 생생한 후기를 확인하세요</p>
-
-    <div class="review-banner">
-      <a href="https://m.place.naver.com/place/1637761160/review/visitor?entry=pll" target="_blank">
-        <img src="banner.png" alt="네이버 평점 4.96" style="cursor:pointer;" />
-      </a>
-    </div>
-
-    <div class="review-cards">
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar">더</div>
-          <div>
-            <div class="review-name">더키43</div>
-            <div class="review-sub">리뷰 172 · 사진 31</div>
-          </div>
-        </div>
-        <div class="review-menu">통증관리 90분 (80,000원)</div>
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">두 번째 방문! 역시나 오늘도 시원하게 잘 받았습니다. 요즘 어깨 통증이 심하고 특히 왼쪽 어깨가 통증이 심하다 보니 더 신경 써서 해 주셔서 좋았습니다. 또 방문하고 싶은 곳이고 저는 여기 단골이 될 것 같습니다.</p>
-        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
-      </div>
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar">제</div>
-          <div>
-            <div class="review-name">제이야안녕</div>
-            <div class="review-sub">리뷰 53 · 사진 43</div>
-          </div>
-        </div>
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">우연히 보고 예약한 곳인데 정말 최고예요! 가장 기본 관리 받았는데도 어디가 불편한지 물어보시고 그 부분 집중 관리 해주시더라구요!! 가격도 이정도면 합리적이구 추가 강요하고 이런거 전혀 없어요!!! 다음에 또 예약하고 올거예용ㅎㅎ</p>
-        <div class="review-tag">🔍 시술이 꼼꼼해요 +3</div>
-      </div>
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar">H</div>
-          <div>
-            <div class="review-name">Happy1234</div>
-            <div class="review-sub">리뷰 8</div>
-          </div>
-        </div>
-        <div class="review-menu">스페셜아로마전신 120분 (120,000원)</div>
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">요즘 몸이 너무 찌뿌둥하고 뻐근해서 방문했어요! 굳이 말하지 않아도 관리사님들이 불편한 곳을 먼저 딱 짚어내서 꼼꼼하게 맞춤 케어를 해주시더라고요. 덕분에 정말 만족스럽게 피로 싹 풀고 갑니다. 👍</p>
-        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
-      </div>
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar">j</div>
-          <div>
-            <div class="review-name">jih****</div>
-            <div class="review-sub">리뷰 10 · 사진 11</div>
-          </div>
-        </div>
-        <div class="review-menu">통증관리 60분 (60,000원)</div>
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">상체 60분 마사지 받았는데 아프진않고 괜찮은지 중간중간 확인해주셔서 좋았고 분위기 너무 편했고 목이랑 어깨통증이 심해져서 마사지샵 처음가봤는데 극락을 맛보고 왔습니다😁 너무 시원해요 주기적으로 가고싶어요 정말😭</p>
-        <div class="review-tag">😊 관리 효과가 좋아요 +4</div>
-      </div>
-      <div class="review-card">
-        <div class="review-header">
-          <div class="review-avatar">g</div>
-          <div>
-            <div class="review-name">ggk****</div>
-            <div class="review-sub">리뷰 1 · 사진 1</div>
-          </div>
-        </div>
-        <div class="review-stars">★★★★★</div>
-        <p class="review-text">컴퓨터 작업 많이 해서 여기저기 쑤시고 머리까지 아팠는데 친구 말 듣고 오길 잘했네요. 어깨 가벼워진 건 말할 것도 없고 두통이 완전히 사라져서 너무 개운해요ㅠ 특히 마지막에 해주신 두통 마사지가 너무 훌륭해서 다른 분들께도 강력 추천하고 싶습니다. 마사지 끝나고 주신 따뜻한 차 한 잔까지 완벽했어요.</p>
-      </div>
-    </div>
-
-    <div class="review-cta">
-      <a href="https://m.place.naver.com/place/1637761160/review/visitor?entry=pll" target="_blank" class="btn-review">
-        📝 네이버 리뷰 전체 보기
-      </a>
-    </div>
-  </div>
-</section>
 
 <!-- INFO -->
 <section class="info" id="info">
@@ -1698,10 +1862,6 @@
 </footer>
 
 <!-- MOBILE BOTTOM BAR -->
-<!-- 공유(링크복사) 플로팅 버튼 -->
-<button class="share-fab" onclick="copyLink()" title="링크 복사">
-  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/><line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/></svg>
-</button>
 <div id="copyToast" style="display:none;position:fixed;bottom:140px;right:16px;z-index:1200;background:#333;color:#fff;padding:8px 16px;border-radius:20px;font-size:0.82rem;font-weight:600;">✅ 링크가 복사됐습니다!</div>
 
 <div class="mobile-bottom-bar">
@@ -1719,6 +1879,12 @@
   }
 
   // Hamburger menu
+  document.querySelectorAll('.review-tag').forEach(function(el) {
+    var parts = el.innerHTML.split(/\s*&nbsp;\s*/).map(function(s){ return s.trim(); }).filter(Boolean);
+    if (parts.length <= 1) return;
+    el.innerHTML = parts[0] + ' <span style="color:#aaa;font-size:0.8rem;">+' + (parts.length - 1) + '</span>';
+  });
+
   function toggleMenu() {
     const nav = document.getElementById('mobileNav');
     nav.classList.toggle('open');
@@ -1772,6 +1938,72 @@
     reviewBtn.textContent = '리뷰';
     wrapper.appendChild(reviewBtn);
   });
+</script>
+
+<!-- 쿠폰 열기 버튼 -->
+<div id="couponBtn" onclick="openCoupon()" style="display:none;position:fixed;bottom:160px;right:12px;z-index:9998;cursor:pointer;text-align:center;">
+  <div style="background:linear-gradient(135deg,#2d7a2d,#4caf50);color:#fff;border-radius:16px;padding:12px 16px;font-weight:800;box-shadow:0 6px 20px rgba(45,122,45,0.55);line-height:1.5;min-width:80px;">
+    <div style="font-size:1.4rem;margin-bottom:2px;">🎁</div>
+    <div style="font-size:0.72rem;opacity:0.9;margin-bottom:3px;">홈페이지 오픈이벤트</div>
+    <div style="font-size:1.1rem;letter-spacing:1px;">10% 쿠폰</div>
+  </div>
+</div>
+
+<!-- 쿠폰 팝업 -->
+<div id="couponOverlay" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,0.55);z-index:9999;align-items:center;justify-content:center;">
+  <div style="background:#fff;border-radius:20px;max-width:340px;width:90%;overflow:hidden;box-shadow:0 20px 60px rgba(0,0,0,0.3);position:relative;">
+    <!-- 상단 초록 헤더 -->
+    <div style="background:linear-gradient(135deg,#2d7a2d,#4caf50);padding:28px 24px 20px;text-align:center;">
+      <div style="font-size:0.8rem;color:rgba(255,255,255,0.85);letter-spacing:1px;margin-bottom:6px;">🎉 홈페이지 런칭 기념</div>
+      <div style="font-size:1.5rem;font-weight:900;color:#fff;line-height:1.2;">약손건강목동마사지</div>
+      <div style="font-size:0.85rem;color:rgba(255,255,255,0.9);margin-top:6px;">오목교역 1번출구 1분</div>
+    </div>
+    <!-- 쿠폰 내용 -->
+    <div style="padding:24px;text-align:center;">
+      <div style="font-size:0.75rem;color:#888;margin-bottom:8px;">이용 기간</div>
+      <div style="font-size:1rem;font-weight:700;color:#333;margin-bottom:20px;">2026년 8월 1일 ~ 8월 31일</div>
+      <!-- 할인율 강조 -->
+      <div style="background:#f0f7f0;border:2px dashed #4caf50;border-radius:14px;padding:18px 16px;margin-bottom:20px;">
+        <div style="font-size:0.8rem;color:#4caf50;font-weight:700;margin-bottom:4px;">전 메뉴</div>
+        <div style="font-size:3rem;font-weight:900;color:#2d7a2d;line-height:1;">10%</div>
+        <div style="font-size:1.1rem;font-weight:800;color:#2d7a2d;">할인 쿠폰</div>
+      </div>
+      <div style="font-size:0.8rem;color:#888;line-height:1.6;margin-bottom:20px;">
+        📱 계산 시 이 화면을 보여주세요<br>
+        ※ 기간 내 1회 이용 가능<br>
+        📅 네이버예약 · 전화예약 모두 가능
+      </div>
+      <!-- 버튼 -->
+      <button onclick="closeCoupon(false)" style="width:100%;padding:14px;background:linear-gradient(135deg,#2d7a2d,#4caf50);color:#fff;border:none;border-radius:12px;font-size:1rem;font-weight:800;cursor:pointer;margin-bottom:10px;">확인했어요!</button>
+      <button onclick="closeCoupon(true)" style="width:100%;padding:10px;background:none;color:#aaa;border:none;font-size:0.8rem;cursor:pointer;">오늘 하루 보지 않기</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function() {
+  var now = new Date();
+  var month = now.getMonth() + 1;
+  if (month !== 8) return;
+  var hidden = localStorage.getItem('coupon_hidden_date');
+  var today = now.toDateString();
+  var btn = document.getElementById('couponBtn');
+  btn.style.display = 'block';
+  if (hidden === today) return;
+  document.getElementById('couponOverlay').style.display = 'flex';
+})();
+
+function closeCoupon(hideToday) {
+  if (hideToday) {
+    localStorage.setItem('coupon_hidden_date', new Date().toDateString());
+  }
+  document.getElementById('couponOverlay').style.display = 'none';
+}
+
+function openCoupon() {
+  localStorage.removeItem('coupon_hidden_date');
+  document.getElementById('couponOverlay').style.display = 'flex';
+}
 </script>
 
 </body>
