@@ -1140,7 +1140,7 @@
       <h1>목동마사지 추천<br /><em>약손건강목동마사지</em></h1>
       <p><strong style="color:#a5d6a7">오목교역 1번 출구 도보 1분</strong><br />
       목동·오목교역 지역 대표 마사지 전문점</p>
-      <div style="margin-top:-15px;background:rgba(0,0,0,0.28);border:2px solid rgba(255,255,255,0.35);border-radius:16px;padding:14px 14px;text-align:left;backdrop-filter:blur(6px);margin-left:-8px;margin-right:-8px;">
+      <div style="margin-top:-15px;background:rgba(0,0,0,0.28);border:2px solid rgba(255,255,255,0.35);border-radius:16px;padding:14px 14px;text-align:left;backdrop-filter:blur(6px);margin-left:-8px;margin-right:-8px;animation:geonjeongGlow 2.5s ease-in-out infinite;">
         <!-- 건전샵 강조 배지 -->
         <div style="display:flex;align-items:center;gap:8px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid rgba(255,255,255,0.2);">
           <span style="font-size:1.3rem;">🛡️</span>
@@ -1876,7 +1876,10 @@
   <button onclick="openCoupon()" id="couponBarBtn" style="flex:1;display:none;align-items:center;justify-content:center;flex-direction:column;gap:2px;background:rgba(30,100,30,0.7);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:none;border-left:1px solid rgba(255,255,255,0.15);color:#fff;font-weight:800;cursor:pointer;height:100%;padding:0 8px;">
     <span style="font-size:0.62rem;opacity:0.85;">홈페이지 오픈이벤트</span>
     <span style="font-size:0.9rem;display:inline-block;animation:couponFloat 2.2s ease-in-out infinite;">🎁 10% 쿠폰</span>
-    <style>@keyframes couponFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}</style>
+    <style>
+      @keyframes couponFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-4px)}}
+      @keyframes geonjeongGlow{0%,100%{box-shadow:0 0 0px rgba(165,214,167,0);border-color:rgba(255,255,255,0.35);}50%{box-shadow:0 0 18px rgba(165,214,167,0.6);border-color:rgba(165,214,167,0.8);}}
+    </style>
   </button>
 </div>
 
