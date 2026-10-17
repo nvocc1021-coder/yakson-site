@@ -1076,7 +1076,8 @@
     .daum-hidden{
       display:none;
     }
-  </style>
+  .mobile-nav .course-nav-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 16px 16px}.mobile-nav .course-nav-item{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border:1.5px solid #e0e0e0;border-radius:12px;font-size:0.78rem;font-weight:700;color:#555;background:#fff;text-decoration:none}.mobile-nav .course-nav-item.active,.mobile-nav .course-nav-item:hover{border-color:#2e7d32;color:#2e7d32;background:#e8f5e9}.mobile-nav .course-nav-item img{width:56px;height:56px;border-radius:10px;object-fit:cover}
+</style>
 </head>
 <body>
 
@@ -1114,12 +1115,14 @@
   <a href="#review" onclick="closeMenu()">리뷰</a>
   <a href="#info" onclick="closeMenu()">오시는길</a>
   <div style="padding:10px 24px 4px;font-size:0.75rem;font-weight:700;color:#aaa;">마사지 종류</div>
-  <a href="sports.html" onclick="closeMenu()">💪 스포츠마사지</a>
-  <a href="aroma.html" onclick="closeMenu()">🌿 아로마마사지</a>
-  <a href="student.html" onclick="closeMenu()">📚 수험생마사지</a>
-  <a href="foot.html" onclick="closeMenu()">🦶 발마사지</a>
-  <a href="couple.html" onclick="closeMenu()">💑 커플마사지</a>
-  <a href="dance.html" onclick="closeMenu()">🩰 무용전공</a>
+  <div class="course-nav-grid">
+    <a href="sports.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg1.png" alt="스포츠마사지">스포츠</a>
+    <a href="aroma.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg2.png" alt="아로마마사지">아로마</a>
+    <a href="student.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg3.png" alt="수험생마사지">수험생</a>
+    <a href="foot.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg4.png" alt="발마사지">발마사지</a>
+    <a href="couple.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg5.png" alt="커플마사지">커플</a>
+    <a href="dance.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg6.png" alt="무용전공마사지">무용전공</a>
+  </div>
 </div>
 
 <!-- daum -->

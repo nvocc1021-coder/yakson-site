@@ -41,7 +41,7 @@
     .logo-name span{color:var(--gold)}
     .logo-sub{font-size:0.88rem;color:#888;font-weight:500}
     .header-btn{background:var(--green);color:#fff;border:none;border-radius:24px;padding:8px 18px;font-size:0.85rem;font-weight:700;cursor:pointer;text-decoration:none}
-    .hamburger{display:none;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;cursor:pointer;background:none;border:none;padding:4px}
+    .hamburger{display:flex;flex-direction:column;justify-content:center;gap:5px;width:36px;height:36px;cursor:pointer;background:none;border:none;padding:4px}
     .hamburger span{display:block;height:2.5px;background:var(--green);border-radius:2px;transition:all .3s}
     .mobile-nav{display:none;position:fixed;top:64px;left:0;right:0;background:#fff;border-bottom:2px solid var(--green-pale);z-index:998;flex-direction:column;box-shadow:0 8px 24px rgba(0,0,0,0.1)}
     .mobile-nav.open{display:flex}
@@ -142,7 +142,8 @@
     .mb-naver{background:#03c75a}
     .mb-call{background:#2e7d32}
     @media(min-width:769px){.mobile-bottom-bar{justify-content:center;background:#1a1a1a}.mobile-bottom-bar a{flex:none;width:200px;border-radius:0;font-size:0.95rem}#couponBarBtn{flex:none!important;width:200px}}
-  </style>
+  .mobile-nav .course-nav-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;padding:6px 16px 16px}.mobile-nav .course-nav-item{display:flex;flex-direction:column;align-items:center;gap:6px;padding:10px 4px;border:1.5px solid #e0e0e0;border-radius:12px;font-size:0.78rem;font-weight:700;color:#555;background:#fff;text-decoration:none}.mobile-nav .course-nav-item.active,.mobile-nav .course-nav-item:hover{border-color:#2e7d32;color:#2e7d32;background:#e8f5e9}.mobile-nav .course-nav-item img{width:56px;height:56px;border-radius:10px;object-fit:cover}@media(min-width:769px){.mobile-nav{left:auto;right:24px;width:340px;border-radius:0 0 14px 14px}}
+</style>
   <style>
     .daum-hidden { display:none; }
   </style></head>
@@ -165,12 +166,14 @@
   <a href="index.html#review" onclick="closeMenu()">리뷰</a>
   <a href="index.html#info" onclick="closeMenu()">오시는길</a>
   <div style="padding:10px 24px 4px;font-size:0.75rem;font-weight:700;color:#aaa;">마사지 종류</div>
-  <a href="sports.html" onclick="closeMenu()" style="color:var(--green)">💪 스포츠마사지</a>
-  <a href="aroma.html" onclick="closeMenu()">🌿 아로마마사지</a>
-  <a href="student.html" onclick="closeMenu()">📚 수험생마사지</a>
-  <a href="foot.html" onclick="closeMenu()">🦶 발마사지</a>
-  <a href="couple.html" onclick="closeMenu()">💑 커플마사지</a>
-  <a href="dance.html" onclick="closeMenu()">🩰 무용전공</a>
+  <div class="course-nav-grid">
+    <a href="sports.html" class="course-nav-item active" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg1.png" alt="스포츠마사지">스포츠</a>
+    <a href="aroma.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg2.png" alt="아로마마사지">아로마</a>
+    <a href="student.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg3.png" alt="수험생마사지">수험생</a>
+    <a href="foot.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg4.png" alt="발마사지">발마사지</a>
+    <a href="couple.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg5.png" alt="커플마사지">커플</a>
+    <a href="dance.html" class="course-nav-item" onclick="closeMenu()"><img src="https://xn--em4bv5e.com/msg6.png" alt="무용전공마사지">무용전공</a>
+  </div>
 </div>
 
 <div class="page-hero">
